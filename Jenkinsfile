@@ -12,7 +12,7 @@ pipeline {
 tar -cvzf ~/test.tar.gz ~/test.txt'''
       }
     }
-    stage('End') {
+    stage('Deploy') {
       steps {
         echo 'Eeeeeeend!!!'
       }
