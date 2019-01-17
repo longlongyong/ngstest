@@ -6,9 +6,10 @@ pipeline {
         echo 'hallo'
       }
     }
-    stage('') {
+    stage('error') {
       steps {
-        sh 'tar -cvzf  ~/git_last.tar.gz ~/.git'
+        sh '''touch test.txt
+tar -cvzf ~/test.tar.gz ~/test.txt'''
       }
     }
   }
