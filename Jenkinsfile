@@ -6,10 +6,15 @@ pipeline {
         echo 'hallo'
       }
     }
-    stage('error') {
+    stage('Backup') {
       steps {
         sh '''touch ~/test.txt
 tar -cvzf ~/test.tar.gz ~/test.txt'''
+      }
+    }
+    stage('End') {
+      steps {
+        echo 'Eeeeeeend!!!'
       }
     }
   }
