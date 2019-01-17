@@ -8,7 +8,7 @@ pipeline {
     }
     stage('error') {
       steps {
-        sh '''touch test.txt
+        sh '''touch ~/test.txt
 tar -cvzf ~/test.tar.gz ~/test.txt'''
       }
     }
