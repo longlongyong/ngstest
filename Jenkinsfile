@@ -15,7 +15,7 @@ tar -cvzf ~/test.tar.gz ~/test.txt'''
     }
     stage('Deploy') {
       steps {
-        echo 'Eeeeeeend!!!'
+        echo 'End!!!'
       }
     }
   }
